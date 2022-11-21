@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getCovidData } from '../redux/covidData/covidDataSlice';
 
-import covidData from '../api/index';
+const App = () => {
+  const dispatch = useDispatch();
 
-const App = () => (
-  <div>
-    <h1>
-      Hallo React
-      {covidData()}
-    </h1>
+  useEffect(() => {
+    dispatch(getCovidData());
+  }, [dispatch]);
 
-  </div>
-);
+  const { covidData } = useSelector((state) => ({ ...state.covidData }));
+  console.log('covidData', covidData);
+  return (
+    <div>
+      <h1>
+        Hallo React
+      </h1>
+      {
+        covidData.map((data) => (
+          <h2 key={data.id}>
+            { data.id }
+          </h2>
+        ))
+      }
+    </div>
+  );
+};
 
 export default App;
