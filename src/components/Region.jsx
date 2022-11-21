@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
-const Region = ({ covidData }) => {
-  const { ActiveCases, Country, id } = covidData;
+const Region = ({ data }) => {
+  const { ActiveCases, Country, id } = data;
   return (
     <Link to={`/country-details/${id}`}>
-      <Card style={{ width: '18rem' }}>
+      <Card>
         <Card.Body>
           <Card.Title>
             { Country }
@@ -24,10 +24,11 @@ const Region = ({ covidData }) => {
 };
 
 Region.propTypes = {
-  covidData: PropTypes.arrayOf(PropTypes.shape({
-    ActiveCases: PropTypes.string,
+  data: PropTypes.PropTypes.shape({
+    ActiveCases: PropTypes.number,
     Country: PropTypes.string,
-  })).isRequired,
+    id: PropTypes.string,
+  }).isRequired,
 };
 
 export default Region;
