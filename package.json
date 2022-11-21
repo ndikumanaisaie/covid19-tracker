@@ -21,7 +21,9 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "^5.0.1",
     "redux": "4.2.0",
-    "redux-thunk": "2.4.1"
+    "redux-thunk": "2.4.1",
+    "react-bootstrap": "2.5.0",
+    "bootstrap": "5.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
