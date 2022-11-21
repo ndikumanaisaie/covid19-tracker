@@ -2,7 +2,7 @@
 covid19-tracker is a comprehensive up-to-date COVID-19 tracker and Treatment tracker website which has been landed to inform people throughout the planet about the present novel coronavirus (COVID-19) pandemic. In covid19-tracker you can also find the most relevant and up-to-date covid19 information. 
 
 ## Below is the screenshot of my work
-![ReactBookStore](https://github.com/ndikumanaisaie/ReactBookStore/blob/use-Redux-in-React/src/assets/images/shot.png)
+![covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker/blob/use-Redux-in-React/src/assets/images/shot.png)
 
 ## Built with
 - Javascript
@@ -19,15 +19,15 @@ covid19-tracker is a comprehensive up-to-date COVID-19 tracker and Treatment tra
 - LinkedIn: [Ndikumana Isaie](https://www.linkedin.com/in/ndikumanaisaie/)
 
 ## Link to URL on gitHub
-- [ReactBookStore](https://github.com/ndikumanaisaie/ReactBookStore.git)
+- [covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker.git)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ## Setup
-clone: run `git clone https://github.com/ndikumanaisaie/ReactBookStore.git`
-Move to cloned folder: run git cd ReactBookStore.
+clone: run `git clone https://github.com/ndikumanaisaie/covid19-tracker.git`
+Move to cloned folder: run git cd covid19-tracker.
 
 ## Install
 
