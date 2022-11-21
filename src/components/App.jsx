@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCovidData } from '../redux/covidData/covidDataSlice';
+import CountryDetails from '../pages/CountryDetails';
+import Regions from '../pages/Regions';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -13,6 +16,15 @@ const App = () => {
   console.log('covidData', covidData);
   return (
     <div>
+      <div className="main-container">
+        <Routes>
+          <Route path="/" element={<Regions />} />
+          <Route
+            path="/country-details/:id"
+            element={<CountryDetails />}
+          />
+        </Routes>
+      </div>
       <h1>
         Hallo React
       </h1>
