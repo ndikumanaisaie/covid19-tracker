@@ -24,3 +24,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+.oddCards {
+  background-color: brown;
+  color: gold;
+  border: 2px solid red;
+}
+
+.evenCards {
+  background-color: rgb(233, 100, 100);
+}

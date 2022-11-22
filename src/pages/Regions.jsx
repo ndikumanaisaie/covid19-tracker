@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import { getCovidData } from '../redux/covidData/covidDataSlice';
 import Region from '../components/Region';
 import Spinner from '../components/Spinner';
+import isOdd from '../utils/utils';
 
 const Regions = () => {
   const [category, setCategory] = useState('Africa');
   const dispatch = useDispatch();
-
-  console.log(category);
 
   useEffect(() => {
     dispatch(getCovidData());
@@ -23,7 +23,10 @@ const Regions = () => {
 
   const dataByContinent = filteredCovidData.filter((data) => data.Continent === category);
 
-  console.log('dataByContinent', dataByContinent);
+  const totalContinentCases = dataByContinent
+    .reduce((acc, curr) => acc + curr.ActiveCases, 0);
+
+  console.log('totalContinentCases: ', totalContinentCases);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -51,9 +54,21 @@ const Regions = () => {
           ))
         }
       </Form.Select>
+      <Card>
+        <Card.Body>
+          <Card.Title>
+            { category }
+          </Card.Title>
+          <Card.Subtitle className="mb-2 text-muted">
+            {totalContinentCases}
+            {' '}
+            Cases
+          </Card.Subtitle>
+        </Card.Body>
+      </Card>
       {
-        dataByContinent.map((data) => (
-          <Region key={data.id} data={data} />
+        dataByContinent.map((data, i) => (
+          <Region cardClass={isOdd(i) ? 'evenCards' : 'oddCards'} key={data.id} data={data} />
         ))
       }
     </div>
