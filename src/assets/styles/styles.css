@@ -16,7 +16,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(30, 80, 173);
 }
 
 .spinner {
@@ -29,12 +29,50 @@ a {
   text-decoration: none;
 }
 
-.oddCards {
-  background-color: brown;
-  color: gold;
-  border: 2px solid red;
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.evenCards {
-  background-color: rgb(233, 100, 100);
+.card-item {
+  flex: 100%;
+}
+
+.card-container > .card-item {
+  flex: 50%;
+}
+
+.card-item:nth-child(4n),
+.card-item:nth-of-type(4n+1) {
+  background-color: #0071bd;
+  color: white;
+}
+
+.card-item:nth-child(4n+3),
+.card-item:nth-child(4n+2) {
+  background-color: #4c8cb7;
+  color: white;
+}
+
+.continent-card {
+  height: 8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .card-container > div {
+    flex: 50%;
+  }
+
+  .card-item-container {
+    flex: 100%;
+  }
 }
