@@ -2,7 +2,7 @@
 covid19-tracker is a comprehensive up-to-date COVID-19 tracker and Treatment tracker website which has been landed to inform people throughout the planet about the present novel coronavirus (COVID-19) pandemic. In covid19-tracker you can also find the most relevant and up-to-date covid19 information. 
 
 ## Below is the screenshot of my work
-![covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker/blob/use-Redux-in-React/src/assets/images/shot.png)
+![covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker/blob/setup/src/assets/images/shot.png)
 
 ## Built with
 - Javascript
@@ -20,6 +20,8 @@ covid19-tracker is a comprehensive up-to-date COVID-19 tracker and Treatment tra
 
 ## Link to URL on gitHub
 - [covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker.git)
+## Link to URL on browser
+- [covid19-tracker](https://isaiecovid19tracker.netlify.app/)
 
 ## Getting Started
 
