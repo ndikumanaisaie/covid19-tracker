@@ -6,6 +6,7 @@ import covidData from '../../api/index';
 export const getCovidData = createAsyncThunk('covid/getCovidData', async () => {
   try {
     const response = await covidData();
+    console.log(response.data);
     return response.data;
   } catch (error) {
     return error;
