@@ -4,7 +4,7 @@ const API = axios.create({
   method: 'GET',
   baseURL: 'https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/npm-covid-data/',
   headers: {
-    'X-RapidAPI-Key': 'd7ec23a06fmsh3e7bf70a809778ap18b7f3jsna5e55b18f5e3',
+    'X-RapidAPI-Key': '4b45196971mshda8f4f3676c8c3ap1cb460jsncf5cf53c390a',
     'X-RapidAPI-Host': 'vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com',
   },
 });
