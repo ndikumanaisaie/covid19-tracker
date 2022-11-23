@@ -9,5 +9,4 @@ const API = axios.create({
   },
 });
 
-export const getCovidData = () => API.get('/');
-export const getWorldCovidData = () => API.get('/world');
+export default () => API.get('/');
