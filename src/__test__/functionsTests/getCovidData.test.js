@@ -1,8 +1,8 @@
-import * as api from '../../api';
+import getCovidData from '../../api/index';
 
 describe('Fetch covid data', () => {
   test('gets the correct data', async () => {
-    const response = await api.getCovidData();
+    const response = await getCovidData();
     const { data } = response;
     expect(data).toBeInstanceOf(Array);
     expect(data[0]).toBeInstanceOf(Object);

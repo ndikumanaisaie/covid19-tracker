@@ -1,14 +1,13 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-import * as api from '../../api';
+import covidData from '../../api/index';
 
 export const getCovidData = createAsyncThunk('covid/getCovidData', async () => {
   try {
-    const response = await api.getCovidData();
+    const response = await covidData();
     return response.data;
   } catch (error) {
-    console.log(error);
     return error;
   }
 });
