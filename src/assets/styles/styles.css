@@ -23,6 +23,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 a {
@@ -38,6 +42,7 @@ a {
 
 .card-item {
   flex: 100%;
+  text-align: center;
 }
 
 .card-container > .card-item {
@@ -58,6 +63,75 @@ a {
 
 .continent-card {
   height: 8rem;
+  color: white;
+  background-color: #4c8cb7;
+  text-align: center;
+}
+
+.case {
+  color: rgb(255, 255, 255);
+  background-color: #0071bd;
+  text-align: center;
+}
+
+.continent-select {
+  width: 30%;
+}
+
+option {
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+}
+
+option::before {
+  content: ">";
+  font-size: 20px;
+  display: none;
+  padding-right: 10px;
+  padding-left: 5px;
+  color: #fff;
+}
+
+option:hover::before {
+  display: inline;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8rem;
+  color: white;
+  font-size: 20px;
+  background-color: #4c8cb7;
+}
+
+.card-details:nth-child(even) {
+  background-color: #0071bd;
+}
+
+.card-details p {
+  width: 10.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: white;
+}
+
+.card-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.country {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
@@ -70,9 +144,5 @@ a {
 
   .card-container > div {
     flex: 50%;
-  }
-
-  .card-item-container {
-    flex: 100%;
   }
 }

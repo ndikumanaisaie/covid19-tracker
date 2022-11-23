@@ -47,9 +47,6 @@ const Regions = () => {
 
   return (
     <div className="container-fluid">
-      <h1>
-        Covid-19 Tracker
-      </h1>
       <Form.Select
         aria-label="Select Continent"
         onChange={handleChange}
@@ -68,17 +65,20 @@ const Regions = () => {
           <Card.Title>
             { category }
           </Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
+          <Card.Subtitle className="mb-2">
             {totalContinentCases}
             {' '}
             Cases
           </Card.Subtitle>
         </Card.Body>
       </Card>
+      <div className="case">
+        <p>NUMBER OF CASES BY COUNTRY</p>
+      </div>
       <div className="card-container">
         {
           dataByContinent.map((data) => (
-            <Link className="card-item" to={`/country-details/${data.id}`} key={data.useDispatch}>
+            <Link className="card-item" to={`/country-details/${data.id}`} key={data.id}>
               <div>
                 <Card.Img variant="top" src={data.flagUrl} style={{ width: '7rem', height: '7rem' }} />
                 <Card.Body>
