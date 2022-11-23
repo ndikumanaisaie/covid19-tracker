@@ -22,6 +22,8 @@ covid19-tracker is a comprehensive up-to-date COVID-19 tracker and Treatment tra
 - [covid19-tracker](https://github.com/ndikumanaisaie/covid19-tracker.git)
 ## Link to URL on browser
 - [covid19-tracker](https://isaiecovid19tracker.netlify.app/)
+## Link to video describing the project
+- [covid19-tracker](https://www.loom.com/share/4267831086c34bcebc7c664c7a01c44d)
 
 ## Getting Started
 
