@@ -6,7 +6,7 @@
 .pnp.js
 
 #config
-congig.js
+/congig
 
 # testing
 /coverage
