@@ -38,6 +38,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: -1.2rem;
 }
 
 .card-item {
@@ -70,7 +71,7 @@ a {
 
 .case {
   color: rgb(255, 255, 255);
-  background-color: #0071bd;
+  background-color: rgb(30, 80, 173);
   text-align: center;
 }
 
