@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router';
+import { useParams, useNavigate } from 'react-router';
 import { useSelector } from 'react-redux';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import Spinner from '../components/Spinner';
@@ -7,6 +7,8 @@ import Spinner from '../components/Spinner';
 const CountryDetails = () => {
   const { covidData, status } = useSelector((state) => ({ ...state.covidData }));
   const { id } = useParams();
+
+  const navigate = useNavigate();
 
   const countryData = covidData.find((data) => data.id === id);
 
@@ -16,7 +18,7 @@ const CountryDetails = () => {
 
   return (
     <div className="card-details-container">
-      <BsFillArrowLeftCircleFill className="back-btn" />
+      <BsFillArrowLeftCircleFill className="back-btn" onClick={() => navigate('/')} />
       <div className="card-details">
         <p>Country</p>
         <p className="country">{countryData.Country}</p>

@@ -111,7 +111,7 @@ option:hover::before {
 }
 
 .card-details p {
-  width: 10.688rem;
+  width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
   font-size: 0.875rem;
@@ -137,13 +137,12 @@ option:hover::before {
 
 .back-btn {
   position: absolute;
-  top: 6.7%;
-  left: 12%;
+  top: 58px;
+  left: 6px;
   color: white;
   cursor: pointer;
   border-radius: 45px;
-  width: 6rem;
-  padding: 0;
+  width: 3rem;
 }
 
 .back-btn:hover {
