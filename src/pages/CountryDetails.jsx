@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { useSelector } from 'react-redux';
+import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import Spinner from '../components/Spinner';
 
 const CountryDetails = () => {
@@ -8,7 +9,6 @@ const CountryDetails = () => {
   const { id } = useParams();
 
   const countryData = covidData.find((data) => data.id === id);
-  console.log('countryData', countryData);
 
   if (status === 'loading') {
     return <Spinner />;
@@ -16,6 +16,7 @@ const CountryDetails = () => {
 
   return (
     <div className="card-details-container">
+      <BsFillArrowLeftCircleFill className="back-btn" />
       <div className="card-details">
         <p>Country</p>
         <p className="country">{countryData.Country}</p>
