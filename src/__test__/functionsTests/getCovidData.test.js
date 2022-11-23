@@ -1,5 +1,8 @@
 import getCovidData from '../../api/index';
 
+jest.useRealTimers();
+jest.setTimeout(200000);
+
 describe('Fetch covid data', () => {
   test('gets the correct data', async () => {
     const response = await getCovidData();

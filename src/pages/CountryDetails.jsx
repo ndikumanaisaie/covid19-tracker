@@ -21,31 +21,31 @@ const CountryDetails = () => {
       <BsFillArrowLeftCircleFill className="back-btn" onClick={() => navigate('/')} />
       <div className="card-details">
         <p>Country</p>
-        <p className="country">{countryData.Country}</p>
+        <p className="country">{countryData?.Country}</p>
       </div>
       <div className="card-details">
         <p>Total Deaths</p>
-        <p>{countryData.TotalDeaths}</p>
+        <p>{countryData?.TotalDeaths}</p>
       </div>
       <div className="card-details">
         <p>Total Recovered</p>
-        <p>{countryData.TotalRecovered}</p>
+        <p>{countryData?.TotalRecovered}</p>
       </div>
       <div className="card-details">
         <p>Active Cases</p>
-        <p>{countryData.ActiveCases}</p>
+        <p>{countryData?.ActiveCases}</p>
       </div>
       <div className="card-details">
         <p>Total Tests</p>
-        <p>{countryData.TotalTests}</p>
+        <p>{countryData?.TotalTests}</p>
       </div>
       <div className="card-details">
         <p>Serious or Critical</p>
-        <p>{countryData.Serious_Critical}</p>
+        <p>{countryData?.Serious_Critical}</p>
       </div>
       <div className="card-details">
         <p>Tests per 1M Population</p>
-        <p>{countryData.Tests_1M_Pop}</p>
+        <p>{countryData?.Tests_1M_Pop}</p>
       </div>
     </div>
 

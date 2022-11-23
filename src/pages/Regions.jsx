@@ -6,7 +6,6 @@ import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import { getCovidData } from '../redux/covidData/covidDataSlice';
 import Spinner from '../components/Spinner';
-// import isOdd from '../utils/utils';
 
 const Regions = () => {
   const [category, setCategory] = useState('Africa');
@@ -33,8 +32,6 @@ const Regions = () => {
 
   const totalContinentCases = dataByContinent
     .reduce((acc, curr) => acc + curr.ActiveCases, 0);
-
-  // const myClass = 'cardItem';
 
   const handleChange = (e) => {
     e.preventDefault();
