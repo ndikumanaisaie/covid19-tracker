@@ -53,8 +53,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to react team
-- Microverse staff
+- Hat tip to Nelson Sakwa on Behance for his amazing design.
+- Microverse
 - Myfamily
 
 ## 📝 License
