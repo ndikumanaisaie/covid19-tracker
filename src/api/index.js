@@ -1,6 +1,7 @@
+/* eslint-disable import/extensions */
 import axios from 'axios';
 
-import REACT_APP_RAPIDAPI_KEY from '../config';
+import REACT_APP_RAPIDAPI_KEY from '../config.js';
 
 const API = axios.create({
   method: 'GET',
