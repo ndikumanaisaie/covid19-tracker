@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tests it renders 1`] = `
+<div
+  className="main-container"
+>
+  <div
+    className="container-fluid"
+  >
+    <select
+      aria-label="Select Continent"
+      className="continent-select form-select"
+      name="category"
+      onChange={[Function]}
+    >
+      <option>
+        Continents
+      </option>
+      <option
+        value="North America"
+      >
+        North America
+      </option>
+      <option
+        value="South America"
+      >
+        South America
+      </option>
+      <option
+        value="Asia"
+      >
+        Asia
+      </option>
+      <option
+        value="Africa"
+      >
+        Africa
+      </option>
+      <option
+        value="Europe"
+      >
+        Europe
+      </option>
+      <option
+        value="Australia/Oceania"
+      >
+        Australia/Oceania
+      </option>
+    </select>
+    <div
+      className="continent-card card"
+    >
+      <div
+        className="card-body"
+      >
+        <div
+          className="card-title h5"
+        >
+          Africa
+        </div>
+        <div
+          className="mb-2 card-subtitle h6"
+        >
+          0
+           
+          Cases
+        </div>
+      </div>
+    </div>
+    <div
+      className="case"
+    >
+      <p>
+        NUMBER OF CASES BY COUNTRY
+      </p>
+    </div>
+    <div
+      className="card-container"
+    />
+  </div>
+</div>
+`;
