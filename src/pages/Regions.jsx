@@ -17,7 +17,9 @@ const Regions = () => {
 
   const { covidData, status } = useSelector((state) => ({ ...state.covidData }));
 
-  const filteredCovidData = covidData.filter((data) => data.Country !== 'Total:' && data.Country !== 'World');
+  const filteredCovidData = covidData.filter((data) => data.Country !== 'France' || data.Country !== 'World');
+
+  console.log(filteredCovidData);
 
   const countryWithFlag = filteredCovidData.map((data) => (
     {

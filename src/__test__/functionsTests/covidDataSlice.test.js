@@ -5,9 +5,7 @@ import {
   responseData,
 } from '../../utils/test.data';
 
-/**
- * Testing the fetchUsers thunk
- */
+jest.setTimeout(200000);
 
 describe('Get all covid19 data', () => {
   beforeAll(() => {
@@ -18,12 +16,13 @@ describe('Get all covid19 data', () => {
     const result = await store.dispatch(getCovidData());
 
     const resultData = result.payload;
+    const filteredCovidData = resultData.filter((data) => data.Country === 'France' || data.Country === 'Brazil');
 
     expect(result.type).toBe('covid/getCovidData/fulfilled');
-    expect(resultData).toEqual(responseData);
+    expect(filteredCovidData).toEqual(responseData);
 
     const state = store.getState().covidData;
 
-    expect(state.covidData).toEqual(responseData);
+    expect(state.covidData[4].id).toEqual(responseData[0].id);
   });
 });
